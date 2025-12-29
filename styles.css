@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .board {
+    display: grid;
+    gap: 5px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .top-bar {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .cell.selected {
+    outline: 2px solid yellow;
+  }
+  
+  .cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+  }
+  
+
+  #drawButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #drawButton:hover {
+    background-color: #45a049;
+  }
+  
+
+
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 200px;
+    z-index: 1000;
+    display: none; 
+  }
+  
+  .tooltip img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .tooltip.show {
+    display: block;
+  }
+  
+  
+  body, .game {
+    position: relative;
+  }
+  
